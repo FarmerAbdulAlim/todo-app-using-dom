@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Abdul Alim, Traveler Abdul Alim" />
+    <meta name="description" content="A Simple To Do App using DOM Concept" />
+    <title>To Do App with DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="logo">
+        <img src="images/bisuddhobari-logo.png" alt="A Logo for Organic Food Store" />
+      </div>
+      <h1 id="header" class="header">Simple To-Do App with DOM</h1>
+
+      <form class="new-task-container box">
+        <label for="new-task">Type New Task To Add</label>
+        <input type="text" id="new-task" />
+        <input  type="submit" id="addTask" value="Add Task" />
+      </form>
+<!--START TODO LIST-->
+      <div class="todo-list box">
+        <h2>Incomplete Tasks</h2>
+        <ul id="items">
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+        </ul>
+      </div>
+      <!--END TODO LIST-->
+
+      <!--START COMPLETE LIST-->
+      <div class="complete-list box">
+        <h2>Completed Tasks</h2>
+        <ul>
+          <li class="item">Task Name <button class="delete">Delete</button></li>
+        </ul>
+      </div>
+      <!--END COMPLETE LIST-->
+    </section>
+    <!--END CONTAINER-->
+    <script src="script.js"></script>
+  </body>
+</html>
